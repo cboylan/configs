@@ -1,0 +1,5 @@
+! .Xmodmap
+! Make Caps lock an extra ctrl
+
+remove Lock = Caps_Lock
+add Control = Caps_Lock

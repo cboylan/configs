@@ -1,0 +1,24 @@
+! .Xresources
+
+URxvt.background: #000000
+URxvt.foreground: #FFFFFF
+URxvt.scrollBar: False
+
+!Open URLs by left clicking them.
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: /usr/bin/chromium
+URxvt.matcher.button: 1
+
+URxvt.fading: 25
+
+URxvt.saveLines: 1024
+
+!URxvt.font:             xft:Terminus:pixelsize=12:antialias=false
+!URxvt.boldFont:         xft:Terminus:bold:pixelsize=12:antialias=false
+URxvt.font:             xft:DejaVu Sans Mono:pixelsize=10:antialias=false
+URxvt.boldFont:         xft:DejaVu Sans Mono:bold:pixelsize=10:antialias=false
+!URxvt.font:             xft:Monospace:pixelsize=10:antialias=false
+!URxvt.boldFont:         xft:Monospace:bold:pixelsize=10:antialias=false
+
+! Make dumb machines happy.
+URxvt.termName: rxvt
