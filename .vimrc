@@ -18,7 +18,8 @@ set wildmode=longest,full
 set hlsearch
 set incsearch
 
-"Make the text look all purrty
+"Make the text look all purrty.
+"Assume xterm and rxvt will support 256 colors.
 if has("syntax")
     if &term =~ "xterm"
         set t_Co=256
@@ -32,7 +33,7 @@ if has("syntax")
     syntax on
 endif
 
-"Autocommand goodness (still slightly beta :) ).
+"Autocommand goodness.
 if has ("autocmd")
     "Autocommands to set up tab widths and autoindentions for c, c++ and java
     augroup C_code
@@ -43,7 +44,7 @@ if has ("autocmd")
     augroup END
 
     "Autocommands to set the all important tab width for ruby. Also begins
-    "new ruby files with the bang and saves it as executable.
+    "new ruby files with the shebang and saves it as executable.
     augroup ruby
         autocmd BufNewFile *.rb 0put ='#!/usr/bin/env ruby'
         autocmd FileType ruby
@@ -53,7 +54,7 @@ if has ("autocmd")
         autocmd BufWritePost *.rb !chmod 744 %
     augroup END
 
-    "Autocommands to set python indentation rules.
+    "Autocommands to set python indentation rules. 4 space tabs per PEP8.
     augroup python
         autocmd FileType python
                      \ set tabstop=4 shiftwidth=4 softtabstop=4
