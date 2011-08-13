@@ -33,6 +33,8 @@ if has("syntax")
     syntax on
 endif
 
+nmap <silent> <c-n> :NERDTreeToggle<CR>
+
 "Autocommand goodness.
 if has ("autocmd")
     "Autocommands to set up tab widths and autoindentions for c, c++ and java
